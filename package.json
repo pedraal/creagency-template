@@ -1,0 +1,17 @@
+{
+  "name": "template_monopage",
+  "version": "1.0.0",
+  "description": "Template pour site vitrine monopage",
+  "author": "pgolfier.pro@gmail.com",
+  "license": "ISC",
+  "repository": "https://github.com/pedraal/template_monopage_1",
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/librairies.scss css/librairies.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}

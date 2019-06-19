@@ -1,0 +1,234 @@
+.navbar {
+    background: none;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+        background: #fff;
+    }
+}
+
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand a,
+.navbar-brand a:link,
+.navbar-brand a:hover,
+.navbar-brand a:visited {
+    color: rgb(74, 74, 74);
+}
+
+.navbar a.navbar-item,
+.navbar .navbar-link {
+    border-radius: 5px;
+}
+
+.navbar-item:hover {
+    background: none;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#apropos,
+#carrieres {
+    background: #9198e5;
+    animation: fadingGradient 30s ease infinite;
+}
+
+@keyframes fadingGradient {
+    0% {
+        background: #9198e5;
+    }
+
+    50% {
+        background: #e66465;
+    }
+
+    100% {
+        background: #9198e5;
+    }
+}
+
+#acceuil.hero {
+    background-color: #b2b4b5 !important;
+    background: url(../images/photo2-compressor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#acceuil .hero-body {
+    padding: 6rem 1.5rem;
+}
+
+#acceuil.hero .social-links {
+    margin-bottom: 15px;
+}
+
+#acceuil.hero .social-links .icon {
+    color: #9198e5;
+    animation: socialLinkFading 10s ease-in-out infinite;
+}
+
+@keyframes socialLinkFading {
+    0% {
+        color: #9198e5;
+    }
+
+    50% {
+        color: #e66465;
+    }
+
+    100% {
+        color: #9198e5;
+    }
+}
+
+#acceuil.hero a.btn {
+    background: linear-gradient(to left, #e66465, #9198e5);
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #dbdbdb;
+    transition: all 0.5s ease;
+}
+
+#acceuil.hero a.btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#services .columns {
+    margin-top: 40px;
+}
+
+#services .column {
+    padding: 40px 20px;
+}
+
+#services article .title span {
+    color: #e66465;
+}
+
+#services article:nth-of-type(2) .title span {
+    color: #9198e5;
+}
+
+#services article a,
+#services article a:link,
+#services article a:hover,
+#services article a:visited {
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto !important;
+}
+
+#services article a:hover {
+    text-decoration: underline;
+}
+
+
+#apropos h2 {
+    margin-bottom: 40px;
+}
+
+#apropos .columns {
+    margin: 0;
+}
+
+#apropos h3.title {
+    margin-bottom: 20px;
+}
+
+#apropos .image img {
+    margin: 0 auto;
+}
+
+#showroom .slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#showroom .slider div {
+    margin: 5px;
+}
+
+#showroom .slider img {}
+
+#showroom .slick-slide {
+    height: auto;
+}
+
+#carrieres h2 {
+    margin-bottom: 40px;
+}
+
+#carrieres .columns {
+    margin: 0;
+}
+
+#carrieres article {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#carrieres .column:first-of-type article {
+    background-image: url(../images/photo4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#carrieres .column:last-of-type article {
+    background-image: url(../images/photo5-flipped.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#carrieres article .overlay {
+    background: rgba(255, 255, 255, 0.8);
+    height: 270px;
+    width: 190px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+
+#carrieres article .overlay h4 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#carrieres article .overlay p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact .icon {
+    margin-top: 2px;
+}
+
+#contact .subtitle {
+    margin-bottom: 0.75rem;
+}
+
+.footer {
+    padding-bottom: 2.5rem;
+}
