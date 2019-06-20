@@ -1,4 +1,22 @@
 $(document).ready(function() {
+    let body = $(document)
+    let nav = $("nav")
+    let navburger = $(".navbar-burger")
+    let navLinks = $(".navbar a, footer a")
+
+    if (body.scrollTop() > 10) {
+        nav.addClass("nav-scrolled");
+    } else {
+        nav.removeClass("nav-scrolled");
+    }
+    body.on("scroll", function() {
+        if (body.scrollTop() > 10) {
+            nav.addClass("nav-scrolled");
+        } else {
+            nav.removeClass("nav-scrolled");
+        }
+    })
+
     $('.slider').slick({
         centerMode: true,
         centerPadding: '40px',
@@ -22,24 +40,6 @@ $(document).ready(function() {
             }
         ]
     });
-
-    let body = $(document)
-    let nav = $("nav")
-    let navburger = $(".navbar-burger")
-    let navLinks = $(".navbar a, footer a")
-
-    if (body.scrollTop() > 10) {
-        nav.addClass("nav-scrolled");
-    } else {
-        nav.removeClass("nav-scrolled");
-    }
-    body.on("scroll", function() {
-        if (body.scrollTop() > 10) {
-            nav.addClass("nav-scrolled");
-        } else {
-            nav.removeClass("nav-scrolled");
-        }
-    })
 
     navburger.on("click", function() {
         $('.navbar-menu').toggleClass("is-active")
