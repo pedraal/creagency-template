@@ -1,4 +1,28 @@
 $(document).ready(function() {
+    $('.slider').slick({
+        centerMode: true,
+        centerPadding: '40px',
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    centerPadding: '60px',
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerPadding: '20px',
+                }
+            }
+        ]
+    });
+
     let body = $(document)
     let nav = $("nav")
     let navburger = $(".navbar-burger")

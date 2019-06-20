@@ -60,7 +60,7 @@ section {
 
 #acceuil.hero {
     background-color: #b2b4b5 !important;
-    background: url(../images/photo2-compressor.jpg);
+    background: url(../images/photo_resized_compressed_7.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -189,13 +189,13 @@ section {
 }
 
 #carrieres .column:first-of-type article {
-    background-image: url(../images/photo4.jpg);
+    background-image: url(../images/photo_resized_compressed_5.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #carrieres .column:last-of-type article {
-    background-image: url(../images/photo5-flipped.jpg);
+    background-image: url(../images/photo_flipped_resized_compressed_4.jpg);
     background-size: cover;
     background-position: center;
 }
