@@ -1,8 +1,13 @@
+.columns {
+    margin: 0;
+}
+
 .navbar {
     background: none;
     transition: all 0.5s ease;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     border-bottom: 1px solid #fff;
+    width: 100% !important;
 }
 
 @media screen and (max-width: 1023px) {
@@ -146,9 +151,6 @@ section {
     margin-bottom: 40px;
 }
 
-#apropos .columns {
-    margin: 0;
-}
 
 #apropos h3.title {
     margin-bottom: 20px;
@@ -175,10 +177,6 @@ section {
 
 #carrieres h2 {
     margin-bottom: 40px;
-}
-
-#carrieres .columns {
-    margin: 0;
 }
 
 #carrieres article {

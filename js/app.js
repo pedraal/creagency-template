@@ -3,6 +3,7 @@ $(document).ready(function() {
     let nav = $("nav")
     let navburger = $(".navbar-burger")
     let navLinks = $(".navbar a, footer a")
+    let navbarLinks = $(".navbar-menu a")
 
     if (body.scrollTop() > 10) {
         nav.addClass("nav-scrolled");
@@ -43,6 +44,10 @@ $(document).ready(function() {
 
     navburger.on("click", function() {
         $('.navbar-menu').toggleClass("is-active")
+    })
+
+    navbarLinks.on('click', function() {
+        $('.navbar-menu').removeClass("is-active")
     })
 
     navLinks.on("click", function(e) {
